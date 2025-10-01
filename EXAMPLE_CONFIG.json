@@ -3,7 +3,8 @@
     {
       "name": "Initialize git repository",
       "command": "git",
-      "args": ["init"]
+      "args": ["init"],
+      "default": "y"
     },
     {
       "name": "Install cc-sessions",
@@ -16,7 +17,8 @@
       "options": [
         {
           "name": "Serena",
-          "args": ["serena", "--", "uvx", "--from", "git+https://github.com/oraios/serena", "serena", "start-mcp-server", "--context", "ide-assistant", "--project", "$(pwd)"]
+          "args": ["serena", "--", "uvx", "--from", "git+https://github.com/oraios/serena", "serena", "start-mcp-server", "--context", "ide-assistant", "--project", "$(pwd)"],
+          "default": true
         },
         {
           "name": "Zig Docs",
