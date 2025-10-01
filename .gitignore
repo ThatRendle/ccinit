@@ -1,0 +1,34 @@
+# Zig build artifacts
+zig-cache/
+zig-out/
+.zig-cache/
+
+# Build directory
+build/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Generated documentation
+docs/
+
+# Test coverage
+*.profraw
+*.profdata
+
+# Dependency caches
+.zigmod/
+deps.zig
+
+# OS-specific files
+Thumbs.db
+
+./sessions/
+CLAUDE.local.md
+.claude/settings.local.json
+

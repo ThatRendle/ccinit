@@ -1,0 +1,28 @@
+{
+  "steps": [
+    {
+      "name": "Initialize git repository",
+      "command": "git",
+      "args": ["init"]
+    },
+    {
+      "name": "Install cc-sessions",
+      "command": "${HOME}/claude/cc-sessions/install.sh"
+    },
+    {
+      "selection": "MCP Servers",
+      "command": "claude",
+      "args": ["mcp", "add"],
+      "options": [
+        {
+          "name": "Serena",
+          "args": ["serena", "--", "uvx", "--from", "git+https://github.com/oraios/serena", "serena", "start-mcp-server", "--context", "ide-assistant", "--project", "$(pwd)"]
+        },
+        {
+          "name": "Zig Docs",
+          "args": ["zig-docs", "--", "bunx", "zig-mcp@latest"]
+        }
+      ]
+    }
+  ]
+}
